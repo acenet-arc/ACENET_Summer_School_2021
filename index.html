@@ -117,7 +117,7 @@ and the administrator will contact you if we need any extra information.</h4>
   Modify the block below if there are any special requirements.
 -->
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
+  <strong>Requirements:</strong> Participants must have an ACENET account. They must bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
   on. They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
@@ -195,10 +195,10 @@ and the administrator will contact you if we need any extra information.</h4>
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>09:00</td>  <td>General parallel computing and working at scale</td> </tr>
       <tr> <td>10:30</td> <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
+      <tr> <td>13:00</td>  <td>Lab</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -206,10 +206,35 @@ and the administrator will contact you if we need any extra information.</h4>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
+      <tr> <td>09:00</td>  <td>OpenMP, shared memory, and threads</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
+      <tr> <td>13:00</td>  <td>Lab</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+    </table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 3</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td>  <td>Message Passing Interface (MPI)</td> </tr>
+      <tr> <td>10:30</td> <td>Coffee</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td>Lab</td> </tr>
+      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+    </table>
+  </div>
+  <div class="col-md-6">
+    <h3>Day 4</h3>
+    <table class="table table-striped">
+      <tr> <td>09:00</td>  <td>GPGPU programming</td> </tr>
+      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:00</td>  <td>Lab</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
@@ -261,28 +286,23 @@ and the administrator will contact you if we need any extra information.</h4>
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
+    <h3 id="syllabus-shell">General parallel computing and working at scale</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
+      <li>performance measurement, and factors affecting performance</li>
+      <li>I/O and data movement</li>
+      <li>schedulers and “embarrassingly parallel” jobs</li>
+      <li>MapReduce, Spark, Hadoop, and all that</li>
+      <li>MapReduce, Spark, Hadoop, and all that</li>
+      <li><a href="{{site.repo_pages}}/shell-novice/reference/">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
+    <h3 id="syllabus-python">OpenMP, shared memory, and threads</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
+      <li>OpenMP</li>
+      <li>Shared memory</li>
+      <li>Threads</li>
+      <li><a href="{{site.repo_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
     </ul>
   </div>
   <!--
@@ -315,31 +335,17 @@ and the administrator will contact you if we need any extra information.</h4>
 
 <div class="row">
   <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
+    <h3 id="syllabus-git">Message Passing Interface (MPI)</h3>
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
+      <li>MPI</li>
+      <li><a href="{{site.repo_pages}}/git-novice/reference/">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
+    <h3 id="syllabus-sql">GPGPU</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
+      <li>CUDA</li>
+      <li><a href="{{site.repo_pages}}/sql-novice-survey/reference/">Reference...</a></li>
     </ul>
   </div>
 </div>
