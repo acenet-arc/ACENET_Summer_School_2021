@@ -26,7 +26,7 @@
           <td class="col-md-7"></td>
         </tr>
       {% endif %}
-      {% assign current = site.start_time %} {% comment %}Re-set start time of this episode to general daily start time {% endcomment %}
+      {% assign current = episode.start_time %}
     {% endif %}
     {% assign hours = current | divided_by: 60 %}
     {% assign minutes = current | modulo: 60 %}
