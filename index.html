@@ -84,16 +84,16 @@ The ACENET Parallel Computing School seeks to educate researchers in those tools
   can use http://itouchmap.com/latlong.html to find the lat/long of an
   address.
 -->
-{% if page.latlng %}
-<p id="where">
-  <strong>Where:</strong>
-  {{page.address}}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
-</p>
-{% endif %}
+//{% if page.latlng %}
+//<p id="where">
+//  <strong>Where:</strong>
+//  {{page.address}}.
+//  Get directions with
+//  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+//  or
+//  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+//</p>
+//{% endif %}
 
 <!--
   SPECIAL REQUIREMENTS
@@ -115,25 +115,23 @@ The ACENET Parallel Computing School seeks to educate researchers in those tools
   Modify the block below if there are any barriers to accessibility or
   special instructions.
 -->
-/*
-<p id="accessibility">
-  <strong>Accessibility:</strong> We are committed to making this workshop
-  accessible to everybody.
-  The workshop organisers have checked that:
-</p>
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  <a href="mailto:{{page.contact}}">get in touch</a> and we will
-  attempt to provide them.
-</p>
-*/
+//<p id="accessibility">
+//  <strong>Accessibility:</strong> We are committed to making this workshop
+//  accessible to everybody.
+//  The workshop organisers have checked that:
+//</p>
+//<ul>
+//  <li>The room is wheelchair / scooter accessible.</li>
+//  <li>Accessible restrooms are available.</li>
+//</ul>
+//<p>
+//  Materials will be provided in advance of the workshop and
+//  large-print handouts are available if needed by notifying the
+//  organizers in advance.  If we can help making learning easier for
+//  you (e.g. sign-language interpreters, lactation facilities) please
+//  <a href="mailto:{{page.contact}}">get in touch</a> and we will
+//  attempt to provide them.
+//</p>
 <!--
   CONTACT EMAIL ADDRESS
 
